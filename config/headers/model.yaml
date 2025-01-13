@@ -1,18 +1,19 @@
-epoch: 50
-test_epoch: 5
+epoch: 200
+test_epoch: 1
 
 parallel_part:
   - emb_func
 
-pretrain_path: ~
+pretrain_path: ./saves/initialization/miniimagenet/Res12-pre.pth
 resume: False
+
 # few shot settings
 way_num: 5
-shot_num: 1
+shot_num: 5
 query_num: 15
-test_way: ~ # use ~ -> test_* = *_num
-test_shot: ~
-test_query: ~
+test_way: 5
+test_shot: 5
+test_query: 15
 episode_size: 1
 train_episode: 100
 test_episode: 100
@@ -20,3 +21,9 @@ test_episode: 100
 # general model setting
 batch_size: 128
 val_per_epoch: 1
+
+# additional settings
+use_euclidean: True
+balance_1: 1
+temperature: 24
+temperature2: 32
