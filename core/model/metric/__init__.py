@@ -5,6 +5,7 @@ from .atl_net import ATLNet
 from .can import CAN
 from .convm_net import ConvMNet
 from .dn4 import DN4
+from .INSTA_ProtoNet import INSTA_ProtoNet
 from .metric_model import MetricModel
 from .proto_net import ProtoNet
 from .relation_net import RelationNet

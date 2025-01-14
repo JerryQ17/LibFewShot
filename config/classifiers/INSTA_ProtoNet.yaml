@@ -1,0 +1,6 @@
+classifier:
+  name: INSTA_ProtoNet
+  kwargs:
+    in_channels: 640
+    out_channels: 640
+    kernel_size: 3

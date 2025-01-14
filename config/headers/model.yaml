@@ -4,7 +4,7 @@ test_epoch: 1
 parallel_part:
   - emb_func
 
-pretrain_path: ./saves/initialization/miniimagenet/Res12-pre.pth
+pretrain_path: ~
 resume: False
 
 # few shot settings
@@ -23,7 +23,3 @@ batch_size: 128
 val_per_epoch: 1
 
 # additional settings
-use_euclidean: True
-balance_1: 1
-temperature: 24
-temperature2: 32
